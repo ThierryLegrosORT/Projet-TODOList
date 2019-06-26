@@ -1,9 +1,17 @@
+body {
+    /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)); */
+    background-color: whitesmoke;
+}
+
 #intitule {
-    text-align: center;
     background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
     background-color: aqua;
+    text-align: center;
     color: purple;
     padding: 30px 40px;
+    margin: 50px;
+    font-size: 20px;
+    font-family: monospace;
 }
 
 #entree {
@@ -12,9 +20,11 @@
     float: center;
     font-size: 16px;
     background-color: rgb(30, 210, 171);
+    color: aliceblue;
 }
 
 ul li {
+    margin: 0 50px 10px 11px;
     text-align: left;
     font-size: 14px;
     font: message-box;
@@ -26,4 +36,15 @@ ul li {
 
 ul li:nth-child(odd) {
     background: #81f7c0;
+}
+
+#listeActuelle {
+    float: left;
+    max-width: 850px;
+    overflow: hidden;
+}
+
+#compteur {
+    float: right;
+    margin-right: 150px;
 }
