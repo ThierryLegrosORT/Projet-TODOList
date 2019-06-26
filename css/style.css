@@ -1,0 +1,29 @@
+#intitule {
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5));
+    background-color: aqua;
+    color: purple;
+    padding: 30px 40px;
+}
+
+#entree {
+    width: 500px;
+    height: 25px;
+    float: center;
+    font-size: 16px;
+    background-color: rgb(30, 210, 171);
+}
+
+ul li {
+    text-align: left;
+    font-size: 14px;
+    font: message-box;
+    cursor: grabbing;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: rgb(11, 218, 138);
+}
+
+ul li:nth-child(odd) {
+    background: #81f7c0;
+}
