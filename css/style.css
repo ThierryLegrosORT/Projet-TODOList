@@ -9,7 +9,6 @@ body {
     text-align: center;
     color: purple;
     padding: 30px 40px;
-    margin: 50px;
     font-size: 20px;
     font-family: monospace;
 }
@@ -42,7 +41,7 @@ ul li:hover {
     background: grey;
 }
 
-ul li:valide {
+ul li.valide {
     background: rgb(0, 174, 255);
     text-decoration: line-through;
 }
@@ -58,7 +57,7 @@ ul li:valide {
     margin-right: 150px;
 }
 
-button {
+.button1 {
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -72,10 +71,10 @@ button {
     box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6), inset -2px -2px 3px rgba(0, 0, 0, .6);
 }
 
-button:hover {
+.button1:hover {
     background-color: rgba(0, 74, 255, 1);
 }
 
-button:active {
+.button1:active {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
