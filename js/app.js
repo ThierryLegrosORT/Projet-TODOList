@@ -8,11 +8,11 @@ for (i = 0; i < myTaskList.length; i++) {
     myTaskList[i].appendChild(button);
 }
 
-var close = document.getElementsByClassName("close");
+const close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
-        var div = this.parentElement;
+        const div = this.parentElement;
         div.style.display = "none";
     }
 }
