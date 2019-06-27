@@ -17,11 +17,14 @@ for (j = 0; j < close.length; j++) {
     }
 }
 
-function NewAdd(input) {
-    const task = document.createElement('li');
-    const checkbox = document.createElement('checkbox');
+function NewAdd(entreeText) {
+    const li = document.createElement('li');
+    const checkbox = document.createElement('input');
+    const todo = document.entree;
 
-    listeActuelle.appendChild(task);
-    task.appendChild(checkbox);
+    listeActuelle.appendChild(li);
+    checkbox.type = 'checkbox';
+    li.appendChild(checkbox);
+    li.textContent = todo;
 
 }
