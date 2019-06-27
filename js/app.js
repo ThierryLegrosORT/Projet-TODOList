@@ -1,5 +1,5 @@
 const myTaskList = document.getElementsByTagName("LI");
-var i;
+let i;
 for (i = 0; i < myTaskList.length; i++) {
     const button = document.createElement("button");
     const btn = document.createTextNode("x");
@@ -9,14 +9,15 @@ for (i = 0; i < myTaskList.length; i++) {
 }
 
 const close = document.getElementsByClassName("close");
-var i;
-for (i = 0; i < close.length; i++) {
-    close[i].onclick = function() {
+let j;
+for (j = 0; j < close.length; j++) {
+    close[j].onclick = function() {
         const div = this.parentElement;
         div.style.display = "none";
     }
 }
 
-function NewAdd() {
+function NewAdd(_input) {
+    const task = document.createElement('li');
 
 }
