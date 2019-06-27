@@ -41,7 +41,7 @@ ul li:hover {
     background: grey;
 }
 
-ul li.valide {
+ul li:checked {
     background: rgb(0, 174, 255);
     text-decoration: line-through;
 }
@@ -80,6 +80,7 @@ ul li.valide {
 }
 
 button.close {
+    /* justify-content: space-between; */
     border: 0;
     line-height: 1;
     padding: 0 5px;

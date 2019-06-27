@@ -17,7 +17,11 @@ for (j = 0; j < close.length; j++) {
     }
 }
 
-function NewAdd(_input) {
+function NewAdd(input) {
     const task = document.createElement('li');
+    const checkbox = document.createElement('checkbox');
+
+    listeActuelle.appendChild(task);
+    task.appendChild(checkbox);
 
 }
