@@ -17,14 +17,15 @@ for (j = 0; j < close.length; j++) {
     }
 }
 
-function NewAdd(entreeText) {
+function NewAdd(entree) {
     const li = document.createElement('li');
     const checkbox = document.createElement('input');
-    const todo = document.entree;
+    const todo = document.getElementById('entree').value;
+    // const txt = todo.innerText;
 
     listeActuelle.appendChild(li);
     checkbox.type = 'checkbox';
-    li.appendChild(checkbox);
     li.textContent = todo;
+    li.appendChild(checkbox);
 
 }
