@@ -23,6 +23,7 @@ body {
 }
 
 ul li {
+    list-style-type: none;
     margin: 0 50px 10px 11px;
     text-align: left;
     font-size: 14px;
@@ -31,6 +32,10 @@ ul li {
     position: relative;
     padding: 12px 8px 12px 30px;
     background: rgb(11, 218, 138);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 ul li:nth-child(odd) {
@@ -41,9 +46,22 @@ ul li:hover {
     background: grey;
 }
 
-ul li:checked {
+ul li.checked {
     background: rgb(0, 174, 255);
     text-decoration: line-through;
+}
+
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
 }
 
 #listeActuelle {
@@ -79,8 +97,10 @@ ul li:checked {
     box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6), inset 2px 2px 3px rgba(0, 0, 0, .6);
 }
 
-button.close {
-    /* justify-content: space-between; */
+.close {
+    position: absolute;
+    right: 0;
+    top: 0;
     border: 0;
     line-height: 1;
     padding: 0 5px;
