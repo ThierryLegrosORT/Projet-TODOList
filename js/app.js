@@ -21,6 +21,7 @@
             const div = this.parentElement;
             div.style.display = "none";
         }
+
     }
     // Ajout du ckeck
     const chk = document.querySelector('ul');
@@ -42,9 +43,9 @@
             alert("Vous devez entrer un texte");
         } else {
             document.getElementById("listeActuelle").appendChild(li);
+            compt();
         }
         document.getElementById("entree").value = "";
-        compt();
 
         const button = document.createElement("button");
         const btn = document.createTextNode("xXx");
